@@ -1,0 +1,14 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    rake (10.1.0)
+    sass (3.2.12)
+    semantic-ui-sass (0.8.3.0)
+      sass (~> 3.2)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  rake
+  semantic-ui-sass

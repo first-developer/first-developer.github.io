@@ -1,0 +1,43 @@
+{
+  "title"        : "com.fd.site",
+    "name"         : "main",
+    "description"  : "Blog about programming and new technologies",
+    "version"      : "1.0.0-SNAPSHOT",
+    "author"       : "Lionel LONKAP TSAMBA ",
+
+    "prod": {
+      "scripts" : "assets/scripts",
+      "styles"  : "assets/styles",
+      "fonts"   : "assets/styles/fonts",
+      "imgs"     : "assets/images"
+    },
+
+    "dev": {
+      "scripts" : "assets/scripts",
+      "styles"  : "assets/styles"
+    },
+
+    "config": {
+      "compass"   : "app/config/compass/config.rb",
+      "requirejs" : "app/config/requirejs/config.js"
+    },
+
+    "tests": "app/tests",
+
+    "libs": {
+      "js" : "lib/js"
+    },
+
+    "dependencies": {
+    },
+
+    "devDependencies": {
+      "grunt-contrib-compass"   : "*",
+      "grunt-contrib-jshint"    : "*",
+      "grunt-contrib-concat"    : "*",
+      "grunt-contrib-watch"     : "*",
+      "grunt-contrib-uglify"    : "*",
+      "grunt-contrib-requirejs" : "*",
+      "grunt-contrib-coffee"    : "*" 
+    }
+}

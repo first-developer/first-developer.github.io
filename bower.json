@@ -1,0 +1,35 @@
+{
+  "name"    : "personal",
+  "version" : "0.1.0",
+  "authors" : [
+    "first-developer <lioninho11@hotmail.fr>"
+  ],
+
+ "description"  : "My personal website",
+ "keywords"     : [
+    "personal",
+    "php",
+    "api"
+ ],
+
+ "license"  : "MIT",
+
+ "ignore"   : [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+ ],
+
+ "dependencies": {
+ },
+
+ "devDependencies": {
+    "font-awesome"  : "*",
+    "jquery"        : "1.9.x",
+    "lodash"        : "*",
+    "bootstrap"     : "*",
+    "animate.sass"  : "*"
+  }
+}
