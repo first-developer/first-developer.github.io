@@ -29,7 +29,7 @@
     "font-awesome"  : "*",
     "jquery"        : "1.9.x",
     "lodash"        : "*",
-    "bootstrap"     : "*",
+    "foundation"    : "*",
     "animate.sass"  : "*"
   }
 }

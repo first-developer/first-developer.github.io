@@ -9,12 +9,12 @@
       "scripts" : "assets/scripts",
       "styles"  : "assets/styles",
       "fonts"   : "assets/styles/fonts",
-      "imgs"     : "assets/images"
+      "imgs"    : "assets/images"
     },
 
     "dev": {
-      "scripts" : "assets/scripts",
-      "styles"  : "assets/styles"
+      "scripts" : "app/scripts",
+      "styles"  : "app/styles"
     },
 
     "config": {
@@ -22,11 +22,15 @@
       "requirejs" : "app/config/requirejs/config.js"
     },
 
+    "paths" : {
+      "bower" : "bower_components" 
+    },
+
     "tests": "app/tests",
 
-    "libs": {
-      "js" : "lib/js"
-    },
+    "libs": "app/scripts/libs",
+
+    "vendors" : "app/scripts/vendors",
 
     "dependencies": {
     },

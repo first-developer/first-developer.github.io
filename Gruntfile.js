@@ -16,16 +16,14 @@ module.exports = function(grunt) {
     // COMPASS
     // ----------------------------------
     compass: {
-      dist: {
+      dev: {
         options: {
-          require       : ['compass', 'animate'],
-          config        : '<%= app.config.compass %>',
-          sassDir       : '<%= app.dev.styles %>',
-          cssDir        : '<%= app.prod.styles %>',
-          imagesDir     : '<%= app.prod.img %>',
-          javascriptsDir: '<%= app.prod.scripts %>',
-          fontsDir      : '<%= app.prod.fonts %>'
+          config : '<%= app.config.compass %>'
         }
+      },
+      prod: {
+        config       : '<%= app.config.compass %>',
+        output_style : 'compressed'
       }
     },
 
@@ -88,7 +86,7 @@ module.exports = function(grunt) {
         dest    : '<%= app.tests %>/js',
         ext     : '.js'
       }
-    }
+    },
 
 
     // ----------------------------------
@@ -106,7 +104,7 @@ module.exports = function(grunt) {
           wrap                    : true
         }
       }
-    }
+    },
 
 
     // ----------------------------------
@@ -125,7 +123,7 @@ module.exports = function(grunt) {
 
       styles: {
         files: ['<%= app.dev.styles %>/**/*.scss'],
-        tasks: ['compass']
+        tasks: ['compass:dev']
       },
 
       coffee : {
@@ -145,7 +143,6 @@ module.exports = function(grunt) {
 
   // Default task.
   grunt.registerTask('default', [ 'jshint', 
-                                  'concat', 
-                                  'uglify']);
+                                  'watch']);
 
 };
