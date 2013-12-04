@@ -1,0 +1,24 @@
+// ------------------------
+// FONTS
+// ------------------------
+
+
+// RUDA 
+
+// regular
+@include font-face('Ruda', 
+  font-files(
+    'Ruda-Regular.ttf', ttf));
+ 
+// bold 
+@include font-face('Ruda', 
+  font-files(
+    'Ruda-Bold.ttf', ttf)
+    ,bold,normal);
+ 
+// black
+@include font-face('Ruda', 
+  font-files(
+    'Ruda-Black.ttf', ttf)
+    ,bold,normal);
+ 
