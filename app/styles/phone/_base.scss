@@ -2,6 +2,22 @@
 // RESPONSIVE : Phone
 // ------------------------
 
-// Phone
-@import "layouts/*";
-@import "modules/*";
+
+@media #{$mobile} {
+
+	@import "layouts/*";
+	@import "modules/*";
+
+	// For none retina display 
+	@include respond-to($non-retina) {
+
+	}
+
+
+	// For retina display 
+	@include respond-to($retina) {
+
+	}
+
+
+}

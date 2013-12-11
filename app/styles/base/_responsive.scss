@@ -2,14 +2,105 @@
 // RESPONSIVE
 // ------------------------
 
+// Sass Media Query Breakpoints 
 
-// Phone
-@import "../phone/base";
+//
+// Variables
+//
+$mobile-small-max-size: 320px !default;
+$mobile-max-size: 640px !default;
+$tablet-min-size: 768px !default;
+$tablet-max-size: 979px !default;
+$desktop-min-size: 979px !default;
+$desktop-large-min-size: 1200px !default;
+$non-retina: 'screen and (-webkit-max-device-pixel-ratio: 1)';
+$retina: 'screen and (-webkit-min-device-pixel-ratio: 2)';
+//
+// METHOD 1
+// 
+// Inspired by https://gist.github.com/chriseppstein/1215856
+//
+// Usage:
+//
+// div {
+//  color: blue;
+//
+// 	@include respond-to(mobile) {
+// 	    color: red;
+//   }
+//
+// }
+//
 
-// Tablet
-@import "../tablet/base";
+@mixin respond-to($media) {
+  @if $media == mobile-small {
+          @media only screen and (max-width: $mobile-small-max-size) { @content; }
+  }
+  @else if $media == mobile {
+          @media only screen and (max-width: $mobile-max-size) { @content; }
+  }
+  @else if $media == mobile-portrait {
+          @media only screen and (max-width: $mobile-max-size) and (orientation: portrait) { @content; }
+  }
+  @else if $media == mobile-landscape {
+          @media only screen and (max-width: $mobile-max-size) and (orientation: landscape) { @content; }
+  }
+  @else if $media == mobile-tablet {
+          @media only screen and (max-width: $tablet-max-size) { @content; }
+  }
+  @else if $media == tablet {
+          @media only screen and (min-width: $tablet-min-size) and (max-width: $tablet-max-size) { @content; }
+  }
+  @else if $media == tablet-landscape {
+          @media only screen and (min-width: $tablet-max-size) and (orientation: landscape) { @content; }
+  }
+  @else if $media == tablet-desktop {
+          @media only screen and (min-width: $tablet-max-size) { @content; }
+  }
+  @else if $media == desktop {
+          @media only screen and (min-width: $desktop-min-size) { @content; }
+  }
+  @else if $media == desktop-large {
+          @media only screen and (min-width: $desktop-large-min-size) { @content; }
+  }
+}
 
-// Desktop
-@import "../desktop/base";
+//
+// METHOD 2
+//
+// Inspired by http://foundation.zurb.com/docs/media-queries.html
+//
+// Usage:
+//
+// div {
+//  color: blue;
+//
+// 	@media #{$mobile} {
+// 	    color: red;
+//   }
+//
+// }
+//
+
+$mobile-small: "only screen and (max-width:"#{$mobile-small-max-size }")" !default;
+$mobile: "only screen and (max-width:"#{$mobile-max-size }")" !default;
+$mobile-portrait: "only screen and (max-width:"#{$mobile-max-size }") and (orientation: portrait)" !default;
+$mobile-landscape: "only screen and (max-width:"#{$mobile-max-size }") and (orientation: portrait)" !default;
+$mobile-tablet: "only screen and (min-width:"#{$tablet-min-size }")" !default;
+$tablet: "only screen and (min-width:"#{$tablet-max-size }")" !default;
+$tablet-landscape: "only screen and (max-width:"#{$tablet-max-size }") and (orientation: landscape)" !default;
+$tablet-desktop: "only screen and (min-width:"#{$tablet-min-size }")" !default;
+$desktop: "only screen and (min-width:"#{$desktop-min-size }")" !default;
+$desktop-large: "only screen and (min-width:"#{$desktop-large-min-size }")" !default;
+
+//EOF
+@mixin respond-to($media) {
+  @media #{$media} {
+    @content;
+  }
+}
+
+
+
 
 

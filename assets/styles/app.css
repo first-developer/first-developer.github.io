@@ -7734,5 +7734,15 @@ p, h1, h2 {
 }
 
 /* No files to import found in modules/* */
-/* No files to import found in modules/* */
-/* No files to import found in modules/* */
+@media only screen and (max-width: 640px) {
+  /* No files to import found in modules/* */
+}
+@media only screen and (min-width: 979px) {
+  /* No files to import found in modules/* */
+}
+@media only screen and (max-width: 979px) and (orientation: landscape) {
+  /* No files to import found in modules/* */
+}
+@media only screen and (min-width: 979px) {
+  /* No files to import found in modules/* */
+}
