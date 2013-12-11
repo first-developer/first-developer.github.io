@@ -7713,14 +7713,14 @@ th.hide-for-touch {
   font-family: "Ruda";
   src: url('/assets/styles/fonts/bold');
   src: url('/assets/styles/fonts/bold?#iefix') format('eot'), url('/assets/styles/fonts/Ruda-Bold.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: bold;
 }
 
 @font-face {
   font-family: "Ruda";
   src: url('/assets/styles/fonts/bold');
   src: url('/assets/styles/fonts/bold?#iefix') format('eot'), url('/assets/styles/fonts/Ruda-Black.ttf') format('truetype');
-  font-weight: normal;
+  font-weight: bold;
 }
 
 /* line 1, ../../app/styles/base/_mixins.scss */
@@ -7732,3 +7732,7 @@ th.hide-for-touch {
 p, h1, h2 {
   font-family: "Ruda";
 }
+
+/* No files to import found in modules/* */
+/* No files to import found in modules/* */
+/* No files to import found in modules/* */

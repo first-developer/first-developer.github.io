@@ -4,6 +4,7 @@
 require 'semantic-ui-sass'
 require 'compass'
 require 'animate'
+require 'sass-globbing'
 
 
 # -------------------------------

@@ -3,6 +3,8 @@ GEM
   specs:
     rake (10.1.0)
     sass (3.2.12)
+    sass-globbing (1.1.0)
+      sass (>= 3.1)
     semantic-ui-sass (0.8.3.0)
       sass (~> 3.2)
 
@@ -11,4 +13,5 @@ PLATFORMS
 
 DEPENDENCIES
   rake
+  sass-globbing
   semantic-ui-sass

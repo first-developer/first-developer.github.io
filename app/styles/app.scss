@@ -1,23 +1,28 @@
-// ---------------
+
+// ----------------------------
 // LIBS
-// ---------------
+// ----------------------------
 
 @import "compass";
 @import "animate";
 @import "foundation";
 
 
-
-// ---------------
+// ----------------------------
 // BASE
-// ---------------
+// ----------------------------
 
+@import "base/vars";
 @import "base/colors";
 @import "base/fonts";
 @import "base/icons";
 @import "base/mixins";
 @import "base/typo";
+@import "base/responsive";
 
-// ---------------
-// MODULES
-// ---------------
+
+// ----------------------------
+// OVERRIDES
+// ----------------------------
+
+@import "base/overrides";

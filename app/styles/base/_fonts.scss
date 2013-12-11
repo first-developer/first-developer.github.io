@@ -14,11 +14,11 @@
 @include font-face('Ruda', 
   font-files(
     'Ruda-Bold.ttf', ttf)
-    ,bold,normal);
+    ,bold,bold);
  
 // black
 @include font-face('Ruda', 
   font-files(
     'Ruda-Black.ttf', ttf)
-    ,bold,normal);
+    ,bold,bold);
  
